@@ -12,7 +12,7 @@ By the end you'll have:
 Open a fresh Claude session on the course repo.
 Confirm `/verify-spec` is available. Type `/` in the input box and look for it in the skill list.
 
-![[CleanShot 2026-05-04 at 21.41.37.png]]
+![](<screenshots/CleanShot 2026-05-04 at 21.41.37.png>)
 
 
 Run the skill. Claude will respond with the framing question for the interview.

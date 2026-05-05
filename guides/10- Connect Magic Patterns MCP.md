@@ -14,7 +14,7 @@ Source: https://www.magicpatterns.com/docs/documentation/features/mcp-server/ove
 
 Go to Settings --> Connectors --> Browse and find Magic Patterns. Press Connect and move through the connection process.
 
-![[CleanShot 2026-05-01 at 15.20.39.png]]
+![](<screenshots/CleanShot 2026-05-01 at 15.20.39.png>)
 
 Magic Patterns' docs show the connector like this:
 
@@ -22,7 +22,7 @@ Magic Patterns' docs show the connector like this:
 
 You should see this confirmation screen when complete.
 
-![[CleanShot 2026-05-01 at 15.21.04.png]]
+![](<screenshots/CleanShot 2026-05-01 at 15.21.04.png>)
 
 If the connector is not available in your Claude settings, use the CLI instead:
 

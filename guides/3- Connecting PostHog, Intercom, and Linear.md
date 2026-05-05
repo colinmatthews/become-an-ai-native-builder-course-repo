@@ -4,7 +4,7 @@ For this course you'll connect Claude Code to three services: **Intercom**, **Po
 # Claude Code
 
 To add MCP servers using bearer tokens, you'll need to use the Claude Code CLI. 
-![[CleanShot 2026-05-01 at 11.08.44.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.08.44.png>)
 (`claude --version` should print a version). If not, see the [Claude Code install guide](https://code.claude.com/docs/en/setup).
 
 
@@ -25,14 +25,14 @@ claude mcp list
 ```
 
 You should see your list of MCP servers, including Intercom with the connected status:
-![[CleanShot 2026-05-01 at 11.12.06.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.12.06.png>)
 
 Restart your Claude Desktop app and try the following prompt in Code:
 
 > Using the Intercom MCP, show me 3 recent support conversations with their body text.
 
 You should see a response similar to this:
-![[CleanShot 2026-05-01 at 11.15.48.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.15.48.png>)
 
 
 
@@ -53,13 +53,13 @@ claude mcp list
 ```
 
 You should see your list of MCP servers, including Posthog with the connected status:
-![[CleanShot 2026-05-01 at 11.24.49.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.24.49.png>)
 
 
 Restart your Claude Desktop app and try the following prompt in Code:
 > Using the PostHog MCP, how many `user_registered` events happened in the last 90 days?
 
-![[CleanShot 2026-05-01 at 11.44.23.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.44.23.png>)
 
 
 ## Step 3. Connect Linear
@@ -78,13 +78,13 @@ claude mcp list
 ```
 
 You should see your list of MCP servers, including Linear with the connected status:
-![[CleanShot 2026-05-01 at 11.47.57.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.47.57.png>)
 
 
 Restart your Claude Desktop app and try the following prompt in Code:
 > List the 3 newest Linear issues:
 
-![[CleanShot 2026-05-01 at 11.49.01.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.49.01.png>)
 
 ## Step 4. Cross-service test
 
@@ -94,10 +94,10 @@ Try the following prompt to use all three MCP servers at once:
 
 
 FYI that Claude loads MCP servers progressively and may lie about not having access:
-![[CleanShot 2026-05-01 at 11.51.52.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.51.52.png>)
 
 You should get a final response similar to this:
-![[CleanShot 2026-05-01 at 11.52.49.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.52.49.png>)
 
 
 
@@ -140,7 +140,7 @@ http_headers = { Authorization = "Bearer lin_api_VxaVg6wTEmJPH3V7S4t3psl3MyAWdAD
 
 ```
 
-![[CleanShot 2026-05-01 at 14.06.29.png]]
+![](<screenshots/CleanShot 2026-05-01 at 14.06.29.png>)
 
 
 Restart Codex and prompt
@@ -154,10 +154,10 @@ Try the following prompt to use all three MCP servers at once:
 
 
 FYI that Claude loads MCP servers progressively and may lie about not having access:
-![[CleanShot 2026-05-01 at 11.51.52.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.51.52.png>)
 
 You should get a final response similar to this:
-![[CleanShot 2026-05-01 at 11.52.49.png]]
+![](<screenshots/CleanShot 2026-05-01 at 11.52.49.png>)
 
 
 
@@ -203,10 +203,10 @@ Paste the following values into `mcp.json` and save:
 ```
 
 Restart Cursor after saving the file, then navigate to Cursor settings:
-![[CleanShot 2026-05-01 at 14.12.46 1.png]]
+![](<screenshots/CleanShot 2026-05-01 at 14.12.46 1.png>)
 
 You should see all three MCP servers connected:
-![[CleanShot 2026-05-01 at 14.13.22.png]]
+![](<screenshots/CleanShot 2026-05-01 at 14.13.22.png>)
 
 
 ## Step 2. Cross-service test
@@ -219,5 +219,5 @@ Cursor loads MCP tools when the Agent decides they are relevant. If it says it c
 
 You should get a response similar to this:
 
-![[CleanShot 2026-05-01 at 14.18.02.png]]
+![](<screenshots/CleanShot 2026-05-01 at 14.18.02.png>)
 

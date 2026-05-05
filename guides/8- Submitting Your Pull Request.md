@@ -14,13 +14,13 @@ You need:
 - Github Desktop installed
 - Cursor or another editor installed
 
-![[CleanShot 2026-05-03 at 11.29.38.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.29.38.png>)
 
 ## 1) Review your own diff first
 
 Open the pull request in Github and click the `Files changed` tab.
 
-![[CleanShot 2026-05-03 at 11.29.50.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.29.50.png>)
 
 Before asking anyone else to review, look through the changed files yourself.
 
@@ -59,7 +59,7 @@ Ask Cursor:
 
 `Look at package.json and tell me the relevant commands to for CI/CD before submitting this PR. Then run them and tell me if anything fails.`
 
-![[CleanShot 2026-05-03 at 11.31.52.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.31.52.png>)
 
 
 If the app does not run locally, do not pretend it does. Explain what you could and could not verify.
@@ -74,7 +74,7 @@ In Github Desktop:
 3. Click `Commit to [branch name]`
 4. Click `Push origin`
 
-![[Pasted image 20260503113259.png]]
+![](<screenshots/Pasted image 20260503113259.png>)
 
 
 After pushing, refresh the pull request in Github. Your latest commit should appear in the PR.
@@ -85,7 +85,7 @@ CI/CD is the automated system that checks your PR. Depending on the repo, it may
 
 On Github, these checks usually appear near the bottom of the PR.
 
-![[CleanShot 2026-05-03 at 11.33.21.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.33.21.png>)
 
 If checks pass, you can move to review. If checks fail, click into the failing check and read the error.
 
@@ -105,7 +105,7 @@ If your branch is out of date, Github may show a message like:
 
 The simplest option is usually to click `Update branch` in Github.
 
-![[CleanShot 2026-05-02 at 22.48.19.png]]
+![](<screenshots/CleanShot 2026-05-02 at 22.48.19.png>)
 
 This brings the latest changes from `main` into your branch. After updating, CI/CD may run again, so wait for the checks to finish.
 

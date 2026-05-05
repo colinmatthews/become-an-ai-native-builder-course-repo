@@ -50,14 +50,14 @@ Cool? Cool.
 
 Let's try it out by making a skill for writing great prompts for image generation.
 
-![[CleanShot 2026-04-28 at 15.54.32.png]]
+![](<screenshots/CleanShot 2026-04-28 at 15.54.32.png>)
 
 Claude has some follow up questions after reading the skill, which we'll answer below.
-![[CleanShot 2026-04-28 at 15.55.58.png]]
+![](<screenshots/CleanShot 2026-04-28 at 15.55.58.png>)
 
 
 Once complete, we can see Claude create the skill.
-![[CleanShot 2026-04-28 at 16.37.32.png]]
+![](<screenshots/CleanShot 2026-04-28 at 16.37.32.png>)
 
 
 Claude will then run tests to determine if the skill is providing high quality outputs. In Claude Chat, it does this as part of the chat with the prior context of the conversation stored. Here, you can continue to iterate on the skill with Claude.
@@ -68,10 +68,10 @@ When complete, Claude Chat cannot install its own skills. Instead, you will need
 Creating a skill works the same as above with Claude Chat. The major differences are that Cowork can create subagents for testing and can directly install skills within its virtual machine.
 
 Here you can see the Skill file created inline and the ability to install directly.
-![[CleanShot 2026-04-28 at 19.10.14.png]]
+![](<screenshots/CleanShot 2026-04-28 at 19.10.14.png>)
 
 Once installed, you can access your skills via the Customize menu.
-![[CleanShot 2026-04-28 at 19.11.53 1.png]]
+![](<screenshots/CleanShot 2026-04-28 at 19.11.53 1.png>)
 
 
 
@@ -84,7 +84,7 @@ Claude Code skills are independent of Claude Chat and Cowork skills. They can li
 
 To create a skill with Claude Code, you should start by installing the skill creator skill. You can do this from the Skill marketplace.
 
-![[CleanShot 2026-04-28 at 19.38.40.png]]
+![](<screenshots/CleanShot 2026-04-28 at 19.38.40.png>)
 
 
 The skill directory within Claude Code desktop is more limited than the terminal. 
@@ -92,7 +92,7 @@ You should never trust skills downloaded from the internet without reading them 
 
 Once you have the skill creator skill installed, you can use it within Claude Code desktop or terminal to create a skill local to your project. It will be stored within your project files and is best accessed with a code editor like Cursor or VS Code.
 
-![[CleanShot 2026-04-28 at 19.41.28.png]]
+![](<screenshots/CleanShot 2026-04-28 at 19.41.28.png>)
 
 
 
@@ -100,11 +100,11 @@ Once you have the skill creator skill installed, you can use it within Claude Co
 
 Codex comes with a built in skill creator skill. You can access it with `/Skill Creator`
 
-![[CleanShot 2026-04-28 at 19.49.00.png]] 
+![](<screenshots/CleanShot 2026-04-28 at 19.49.00.png>) 
 
 Skills are stored on your local machine at a user level in the Codex directory.
-![[CleanShot 2026-04-28 at 19.51.11.png]]
+![](<screenshots/CleanShot 2026-04-28 at 19.51.11.png>)
 
 
 Once you complete installation steps, you can trigger your skill with a `/` command.
-![[CleanShot 2026-04-28 at 19.54.15.png]]
+![](<screenshots/CleanShot 2026-04-28 at 19.54.15.png>)

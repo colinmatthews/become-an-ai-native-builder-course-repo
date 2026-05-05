@@ -13,10 +13,10 @@ This guide will focus on the second workflow.
 
 To get started, find the Figma plugin in your tool of choice. In Claude Code, it can be found in the Customize menu under Plugins --> Browse Plugins.
 
-![[CleanShot 2026-05-02 at 16.22.56.png]]
+![](<screenshots/CleanShot 2026-05-02 at 16.22.56.png>)
 
 Now, let's assume we have a prototype of some kind, like this:
-![[CleanShot 2026-05-02 at 17.20.28.png]]
+![](<screenshots/CleanShot 2026-05-02 at 17.20.28.png>)
 
 
 We can move it back into Figma in two ways:
@@ -31,18 +31,18 @@ Use a prompt like this:
 [https://www.figma.com/design/NtgkbJYyusdRMBgLSy5k57/Stride-%E2%80%94-Design-System?node-id=83-2&p=f&t=oFb8tdGpDphIPaVQ-0](https://www.figma.com/design/NtgkbJYyusdRMBgLSy5k57/Stride-%E2%80%94-Design-System?node-id=83-2&p=f&t=oFb8tdGpDphIPaVQ-0)
 
 This should invoke a few figma skills and the MCP server to explore your page:
-![[CleanShot 2026-05-02 at 16.55.48.png]]
+![](<screenshots/CleanShot 2026-05-02 at 16.55.48.png>)
 
 This will result in many tool calls and can take 30+ minutes. Here is the final result:
-![[CleanShot 2026-05-02 at 17.21.51.png]]
+![](<screenshots/CleanShot 2026-05-02 at 17.21.51.png>)
 
 Importantly, if we inspect the file, we'll see that it uses the design system elements like the primary color and button component.
-![[CleanShot 2026-05-02 at 17.22.41.png]]
+![](<screenshots/CleanShot 2026-05-02 at 17.22.41.png>)
 
 
 The second workflow available is to not use the design system. This will be much faster and almost an exact replica, but obviously won't use any of the design system elements.
 
-![[CleanShot 2026-05-02 at 17.32.44.png]]
+![](<screenshots/CleanShot 2026-05-02 at 17.32.44.png>)
 
 You can see that the exported frame is visually similar to the prior output, with some minor modifications. Inspecting the elements would show that there is no variables or components being used in this design.
 

@@ -10,7 +10,7 @@ You need:
 
 If you have not downloaded the repo yet, open the repo in Github and select `Code --> Open with Github Desktop`.
 
-![[CleanShot 2026-05-01 at 16.25.27.png]]
+![](<screenshots/CleanShot 2026-05-01 at 16.25.27.png>)
 
 ## What is happening?
 
@@ -29,9 +29,9 @@ After you push, the pull request will update automatically.
 ## 1) Open the branch locally
 
 Open Github Desktop. At the top, confirm you are in the correct repo.
-![[CleanShot 2026-05-03 at 11.18.37.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.18.37.png>)
 Click the branch dropdown. You should see the branch created by Cursor or your background agent.
-![[CleanShot 2026-05-03 at 11.19.01.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.19.01.png>)
 
 Select the branch. Github Desktop will pull the files for that branch onto your computer.
 If Github Desktop asks whether you want to fetch or pull, click the option to get the latest changes.
@@ -39,7 +39,7 @@ If Github Desktop asks whether you want to fetch or pull, click the option to ge
 ## 2) Open the project in Cursor
 
 From Github Desktop, click `Open in Cursor` or `Open in External Editor`.
-![[CleanShot 2026-05-03 at 11.19.43.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.19.43.png>)
 
 If you do not see Cursor, open Cursor manually and choose `File --> Open Folder`. Select the repo folder. You are now looking at the background agent's branch on your computer.
 
@@ -77,7 +77,7 @@ Use a prompt like:
 
 Go back to Github Desktop. You should see your changed files listed on the left.
 
-![[CleanShot 2026-05-03 at 11.25.06.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.25.06.png>)
 
 Click through the files and review the diff.
 
@@ -101,21 +101,21 @@ Examples:
 - `Fix background agent guide typo`
 
 You can also ask cursor to commit for you. After, you can view your commit in your branch history.
-![[CleanShot 2026-05-03 at 11.25.59.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.25.59.png>)
 
 This commit only lives on your computer for now and needs to be pushed to Github.
 
 ## 7) Push your change
 
 After committing, click `Push origin`. If you don't see Push Origin, you may need to push the branch first.
-![[CleanShot 2026-05-03 at 11.26.31.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.26.31.png>)
 
 This sends your local commit back to Github. If there is already a pull request open, the pull request will update automatically.
 
 ## 8) Check the pull request
 
 Open the pull request in Github. You can access it easily from Github Desktop:
-![[CleanShot 2026-05-03 at 11.27.26.png]]
+![](<screenshots/CleanShot 2026-05-03 at 11.27.26.png>)
 
 You may have errors on your Pull Request; we'll cover that in 8 - Submitting Your Pull Request.
 

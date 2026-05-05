@@ -15,7 +15,7 @@ Pick whichever method you have set up.
 
 **Github Desktop** (easiest): On the stride-components repo page, click **Code → Open with Github Desktop**.
 
-![[CleanShot 2026-05-01 at 16.25.27.png]]
+![](<screenshots/CleanShot 2026-05-01 at 16.25.27.png>)
 
 **Git CLI**: `git clone https://github.com/colinmatthews/stride-components`
 
@@ -52,7 +52,7 @@ The agent should:
 3. Drop in realistic-looking mock data so the view actually renders
 
 eg:
-![[CleanShot 2026-05-01 at 17.39.44.png]]
+![](<screenshots/CleanShot 2026-05-01 at 17.39.44.png>)
 
 ## 5) Iterate
 

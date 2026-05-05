@@ -14,26 +14,26 @@ Prompt Claude to package together the skill and the MCP.
 
 > Package together the /become-an-ai-builder skill and the Become an ai native builder mcp into a plugin 
 
-![[CleanShot 2026-05-02 at 14.47.06.png]]
+![](<screenshots/CleanShot 2026-05-02 at 14.47.06.png>)
 
 
 Click Save Plugin to install it directly.
 
-![[CleanShot 2026-05-02 at 14.55.06.png]]
+![](<screenshots/CleanShot 2026-05-02 at 14.55.06.png>)
 
 To use the plugin, open a new chat and select the plugin.
-![[CleanShot 2026-05-02 at 14.55.43.png]]
+![](<screenshots/CleanShot 2026-05-02 at 14.55.43.png>)
 
 
 ### Codex
 
 Navigate to Plugins in the left panel and click Create in the top-right corner.
-![[CleanShot 2026-05-02 at 14.57.30.png]]
+![](<screenshots/CleanShot 2026-05-02 at 14.57.30.png>)
 
 Prompt the following:
 >  Package together the /become-an-ai-builder skill and the Become an ai native builder mcp into a plugin 
 
-![[CleanShot 2026-05-02 at 14.58.00.png]]
+![](<screenshots/CleanShot 2026-05-02 at 14.58.00.png>)
 
 Once complete, ask Codex to install the plugin.
 Codex does not have clean install workflow and will to modify its own configuration, which can take many tool calls.
@@ -41,7 +41,7 @@ Codex does not have clean install workflow and will to modify its own configurat
 You will also have to prompt to make the plugin visible in the list of plugins after Codex completes the installation.
 
 Finally, restart Codex and you should see your plugin available.
-![[CleanShot 2026-05-02 at 15.06.25.png]]
+![](<screenshots/CleanShot 2026-05-02 at 15.06.25.png>)
 
 
 
@@ -49,7 +49,7 @@ Finally, restart Codex and you should see your plugin available.
 
 Open Cursor's Marketplace and find the `create-plugin-scaffold` plugin. Add it to your account.
 
-![[CleanShot 2026-05-02 at 15.06.48.png]]
+![](<screenshots/CleanShot 2026-05-02 at 15.06.48.png>)
 
 
 In a new agent chat, type `/create-plugin-scaffold`, then prompt:
@@ -61,9 +61,9 @@ In a new agent chat, type `/create-plugin-scaffold`, then prompt:
 > 3. A README listing the trigger prompts and the call pattern
 
 
-![[CleanShot 2026-05-02 at 15.07.48.png]]
+![](<screenshots/CleanShot 2026-05-02 at 15.07.48.png>)
 
 Confirm the plugin is installed under Cursor settings → Plugins. It should have the `local` tag.
 
-![[CleanShot 2026-05-02 at 15.10.50.png]]
+![](<screenshots/CleanShot 2026-05-02 at 15.10.50.png>)
 

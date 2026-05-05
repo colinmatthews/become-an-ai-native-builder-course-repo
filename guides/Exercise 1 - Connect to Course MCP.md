@@ -5,46 +5,46 @@ Here's how you get setup:
 ## Claude Code
 
 Start by opening your Settings in Claude Code.
-![[CleanShot 2026-05-02 at 13.41.54.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.41.54.png>)
 
 Open the Customize menu and click "Add custom connector"
-![[CleanShot 2026-05-02 at 13.42.36.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.42.36.png>)
 
 
 Add a connector with the name "Become an AI-Native Builder" with the URL https://bold-forge-rhvty.run.mcp-use.com/mcp.
 
-![[CleanShot 2026-05-02 at 13.45.32.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.45.32.png>)
 
 The successful connection should look like this:
-![[CleanShot 2026-05-02 at 13.47.41.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.47.41.png>)
 
 To use the MCP, just prompt and mention the connector or the course, eg:
 >What is the difference between a skill and plugin? Check the ai native builder mcp
 
 Here's an example result:
-![[CleanShot 2026-05-02 at 13.50.06.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.50.06.png>)
 
 
 ## Codex
 Go to settings --> MCP in Codex and add a new MCP. Select Streamable HTTP and fill in the MCP with the name "Become an AI-Native Builder" with the URL https://bold-forge-rhvty.run.mcp-use.com/mcp.
 
-![[CleanShot 2026-05-02 at 13.51.55.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.51.55.png>)
 
 Restart Codex at this point. Then, type /mcp to verify the connection is available.
-![[CleanShot 2026-05-02 at 13.53.56.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.53.56.png>)
 
 To use the MCP, just prompt and mention the connector or the course, eg:
 >What is the difference between a skill and plugin? Check the ai native builder mcp
 
 Here's an example result:
-![[CleanShot 2026-05-02 at 13.55.48 1.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.55.48 1.png>)
 
 
 
 ## Cursor
 
 Go to Cursor settings (gear icon bottom left corner) and MCP settings.
-![[CleanShot 2026-05-02 at 13.56.29.png]]
+![](<screenshots/CleanShot 2026-05-02 at 13.56.29.png>)
 
 Add the following to your MCP file configuration:
 
@@ -74,12 +74,12 @@ If you already have MCP servers, you can just add this section with a comma on t
 ```
 
 Once connected, you should see a green icon in Cursor beside the MCP.
-![[CleanShot 2026-05-02 at 14.02.08.png]]
+![](<screenshots/CleanShot 2026-05-02 at 14.02.08.png>)
 
 
 You can then prompt to use the MCP server:
 >What is the difference between a skill and plugin? Check the ai native builder mcp
 
-![[CleanShot 2026-05-02 at 14.02.54.png]]
+![](<screenshots/CleanShot 2026-05-02 at 14.02.54.png>)
 
 

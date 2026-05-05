@@ -50,28 +50,28 @@ Use a prompt like:
 ## Setup cloud environment
 
 Open Cursor settings and select Cloud Agents. This will open a new window in your browser.
-![[CleanShot 2026-05-02 at 21.49.00 1.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.49.00 1.png>)
 
 Click "New" on Cloud Agents. You will need to connect to your Github Account if you have not already.
-![[CleanShot 2026-05-02 at 21.50.21.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.50.21.png>)
 
 
 Select the stride repo, then click "Start for free".
-![[CleanShot 2026-05-02 at 21.51.10.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.51.10.png>)
 
 Cursor will now setup a cloud environment for you that can host your full application. At the end, you should see something like this.
-![[CleanShot 2026-05-02 at 21.51.53.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.51.53.png>)
 
 
 Once complete, Save your setup on the right side.
-![[CleanShot 2026-05-02 at 21.52.48.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.52.48.png>)
 
 
 Finally, click "Start new agent".
-![[CleanShot 2026-05-02 at 21.53.29.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.53.29.png>)
 
 Now you can prompt for some feature, and Cursor will autonomously implement it.
-![[CleanShot 2026-05-02 at 21.54.23.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.54.23.png>)
 
 
 Each cloud agent is isolated, so you can run as many as you want in parallel. They do consume credits, so be aware of your usage.
@@ -90,7 +90,7 @@ Background agents can be triggered from:
 You can click into your agent at any time to see it working. You do not need to interact with it at all, it will continue running completely independently.
 
 You can open the right panel to view the agents Git history, it's desktop computer, and it's terminal.
-![[CleanShot 2026-05-02 at 21.59.14.png]]
+![](<screenshots/CleanShot 2026-05-02 at 21.59.14.png>)
 
 When the agent has implemented your feature, it will record itself trying the feature in the product and send you a video walkthrough of the feature.
 
@@ -98,10 +98,10 @@ Here's an example video: https://cursor.com/artifacts/v/art-10a89cbe-adc2-42b2-9
 
 
 When complete, open the right side panel and select "Mark as ready".
-![[CleanShot 2026-05-02 at 22.08.06.png]]
+![](<screenshots/CleanShot 2026-05-02 at 22.08.06.png>)
 
 This will open a pull request under your name in Github against the repo:
-![[CleanShot 2026-05-02 at 22.08.59.png]]
+![](<screenshots/CleanShot 2026-05-02 at 22.08.59.png>)
 
 Your pull requests will not be merged, so you can stop at this point.
 
@@ -109,13 +109,13 @@ Your pull requests will not be merged, so you can stop at this point.
 
 If you want to pull the feature down to your local computer to continue working on it, select Open in Desktop.
 
-![[CleanShot 2026-05-02 at 22.10.23.png]]
+![](<screenshots/CleanShot 2026-05-02 at 22.10.23.png>)
 
 There is a button at the bottom of the view 'Move to local'.
-![[CleanShot 2026-05-02 at 22.10.55.png]]
+![](<screenshots/CleanShot 2026-05-02 at 22.10.55.png>)
 
 If you open Github desktop, you should see the branch selected:
-![[CleanShot 2026-05-02 at 22.11.58.png]]
+![](<screenshots/CleanShot 2026-05-02 at 22.11.58.png>)
 
 Opening the project in any editor should also have the same Cursor code on your local machine.
 
