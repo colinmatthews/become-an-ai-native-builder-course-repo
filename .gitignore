@@ -14,7 +14,7 @@ Icon
 *.swo
 *~
 .vim/
-.cursor/
+.obsidian/
 
 # Node
 node_modules/
