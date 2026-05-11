@@ -5,7 +5,7 @@ For this course you'll connect Claude Code to three services: **Intercom**, **Po
 
 To add MCP servers using bearer tokens, you'll need to use the Claude Code CLI. 
 ![](<screenshots/CleanShot 2026-05-01 at 11.08.44.png>)
-(`claude --version` should print a version). If not, see the [Claude Code install guide](https://code.claude.com/docs/en/setup).
+(`claude --version` should print a version). If not, install with npm install -g @anthropic-ai/claude-code.
 
 
 ## Step 1. Connect Intercom
