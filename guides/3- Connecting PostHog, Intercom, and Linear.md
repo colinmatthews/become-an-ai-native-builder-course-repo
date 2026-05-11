@@ -7,7 +7,8 @@ To add MCP servers using bearer tokens, you'll need to use the Claude Code CLI.
 ![](<screenshots/CleanShot 2026-05-01 at 11.08.44.png>)
 (`claude --version` should print a version).
 
-If not, install for your platform.
+If not, install for your platform. Full instructions here: https://code.claude.com/docs/en/overview#native-install-recommended
+
 macOS, Linux, WSL:
 curl -fsSL https://claude.ai/install.sh | bash
 
