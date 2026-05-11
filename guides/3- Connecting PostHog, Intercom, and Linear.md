@@ -7,20 +7,11 @@ To add MCP servers using bearer tokens, you'll need to use the Claude Code CLI.
 ![](<screenshots/CleanShot 2026-05-01 at 11.08.44.png>)
 (`claude --version` should print a version).
 
-If not, install for your platform. Full instructions here: https://code.claude.com/docs/en/overview#native-install-recommended
 
-macOS, Linux, WSL:
-curl -fsSL https://claude.ai/install.sh | bash
+If not, install for your platform. The easiest way to to ask Claude Code desktop to help you install Claude CLI. Use this prompt:
+`can you help me install claude code for terminal?`
 
-Windows PowerShell:
-irm https://claude.ai/install.ps1 | iex
-
-Windows CMD:
-curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
-
-If you see The token '&&' is not a valid statement separator, you’re in PowerShell, not CMD. If you see 'irm' is not recognized as an internal or external command, you’re in CMD, not PowerShell. Your prompt shows PS C:\ when you’re in PowerShell and C:\ without the PS when you’re in CMD.
-
-Git for Windows is recommended on native Windows so Claude Code can use the Bash tool. If Git for Windows is not installed, Claude Code uses PowerShell as the shell tool instead. WSL setups do not need Git for Windows.
+If you want to install manully, full instructions are here: https://code.claude.com/docs/en/overview#native-install-recommended
 
 
 ## Step 1. Connect Intercom
