@@ -15,7 +15,6 @@ The Intercom MCP server lets Claude read your support conversations, tickets, an
 Copy and paste the command below to connect to our Intercom:
 ```bash
 claude mcp add -s user --transport http intercom https://mcp.intercom.com/mcp \
-
 --header "Authorization: Bearer dG9rOmFjYTE3MDQwXzY2YTJfNGQ5Y19hMjljX2QyNThmNTA1YTY0NToxOjA="
 ```
 
@@ -42,9 +41,7 @@ You should see a response similar to this:
   
 ```bash
 claude mcp add -s user --transport http posthog https://mcp.posthog.com/mcp \
-
---header "Authorization: Bearer phx_V6CghSRBjjtRcrqEbiYRZahTcU6y85pWtv42riNZh2JYPxET"
-
+--header "Authorization: Bearer phx_yA2aBrTyeT6hZujh7prUqHypg8E36XH2qtGwRVQAosWDwTdL"
 ```
 
 Then try this command to list your MCP servers:
@@ -69,7 +66,7 @@ The Linear MCP server lets Claude read issues, projects, cycles, and labels.
 
 ```bash
 claude mcp add -s user --transport http linear https://mcp.linear.app/mcp \
-  --header "Authorization: Bearer lin_api_YMLzHCGq22E1bWhCPlWoYzyT6gML9cGj85esxBMO"
+  --header "Authorization: Bearer lin_api_fg9wRkcAXQwM60NRP5O3oYrsOAb1MuV53jVtItQx"
 ```
 
 Then try this command to list your MCP servers:
@@ -221,3 +218,31 @@ You should get a response similar to this:
 
 ![](<screenshots/CleanShot 2026-05-01 at 14.18.02.png>)
 
+
+---
+
+# Troubleshooting
+
+## PostHog or Linear tools not appearing in Claude Code Desktop
+
+**Symptom:** `claude mcp list` shows PostHog and Linear as `✓ Connected`, but in the Desktop app Claude only offers to "authenticate" instead of actually querying data.
+
+**Cause:** Claude Code Desktop caches which MCP servers require OAuth authentication. If PostHog or Linear get added to this cache, the Desktop app intercepts them and surfaces OAuth wrapper tools instead of the real data tools — even when you've configured a valid bearer token.
+
+**Fix:** Clear the entries from the auth cache and restart Desktop.
+
+1. Open a terminal and run:
+```bash
+open ~/.claude/mcp-needs-auth-cache.json
+```
+
+2. Remove the `"posthog"` and/or `"linear"` entries from the JSON, leaving any other entries (e.g. Slack, Gmail) intact. The file should look something like:
+```json
+{"claude.ai Slack":{"timestamp":...,"id":"..."},"claude.ai Gmail":{"timestamp":...,"id":"..."}}
+```
+
+3. Save the file and restart Claude Code Desktop.
+
+The bearer token will now be used directly and the full tool set will appear.
+
+> **Note:** The bearer token approach works seamlessly in the Claude Code CLI. If you'd rather skip this fix, you can run cross-service prompts from a terminal session instead of the Desktop app.

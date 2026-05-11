@@ -185,6 +185,9 @@
   },
   "active": "930f67a109c28da7",
   "lastOpenFiles": [
+    "guides/3- Connecting PostHog, Intercom, and Linear.md",
+    "guides/4 - Creating Your First Plugin.md",
+    "guides/5 - Code-based Prototypes.md",
     "AI-native-builder/README.md",
     "AI-native-builder/2- Creating Your First Skill.md",
     "AI-native-builder/1 - Setting Up Your First MCP Connection.md",
@@ -218,9 +221,6 @@
     "AI-native-builder/11 - Figma Loop.md",
     "AI-native-builder/12 - Background agent & Github integration (Codex, Claude Code, Cursor).md",
     "AI-native-builder/13 - FAQ.md",
-    "AI-native-builder/10- Connect Magic Patterns MCP.md",
-    "AI-native-builder/8- Submitting Your Pull Request.md",
-    "AI-native-builder/screenshots/Untitled.md",
     "AI-native-builder/screenshots"
   ]
 }

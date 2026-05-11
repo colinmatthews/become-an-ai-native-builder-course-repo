@@ -1,0 +1,146 @@
+task: "Weekly critical-issues digest from PostHog + Intercom"
+slug: "weekly-critical-issues-digest"
+calibration_target: "no-context stranger (fixed by skill)"
+created: 2026-05-05
+description: >
+  A weekly process that reads ALL Intercom conversations from the past 7 days
+  via parallelized subagents, queries PostHog event-level signals (not just
+  web-analytics summaries), surfaces the top critical issues, cross-references
+  whether each issue is already in-flight, saves the result to a dated md file
+  in a folder of prior digests, and presents a summary with direct references
+  the user can validate. The process must read any prior md file in the folder
+  to track severity drift.
+
+artifacts_to_check:
+  - the saved md file at <folder>/YYYY-MM-DD-critical-issues.md
+  - the summary message presented to the user (where applicable)
+
+checks:
+  - id: explicit_date_range
+    type: structural
+    statement: >
+      The md file's H1 title states an explicit date range covered with both a
+      start AND end date, formatted as ISO dates (YYYY-MM-DD), e.g.
+      "Week of 2026-04-28 → 2026-05-05". A single date or phrases like "this
+      week" / "last week" without explicit dates fail.
+    rationale: >
+      Without an explicit window, severity drift across files cannot be
+      reconstructed.
+
+  - id: full_ticket_coverage_stated
+    type: structural
+    statement: >
+      The md file contains a section (e.g., "Methodology") that states (a) the
+      total number of Intercom conversations created in the time window and
+      (b) explicitly confirms 100% of them were read. If sampling occurred or
+      the document does not confirm full coverage, this check fails.
+    rationale: >
+      User explicitly rejected sampled digests; coverage must be auditable
+      from the file.
+
+  - id: methodology_parallelization_stated
+    type: structural
+    statement: >
+      The md file states (a) the number of parallel subagent workers used to
+      read the Intercom tickets and (b) the approximate number of tickets each
+      worker handled. The numbers must reconcile with the total conversation
+      count (workers × tickets-per-worker ≈ total, within rounding).
+    rationale: >
+      Process transparency: the user requested parallelized subagents over
+      sampling, and reproducibility requires the strategy be visible.
+
+  - id: posthog_event_level_signals
+    type: reference
+    statement: >
+      The md file references at least one PostHog signal derived from
+      event-level data, defined as ONE of: a specific event name (e.g.
+      `$pageview`, `sync_completed`), a PostHog insight ID/short_id, a PostHog
+      error-tracking issue ID, or a HogQL query result. The
+      web-analytics-weekly-digest summary (visitors / pageviews / sessions
+      counts) alone does NOT satisfy this check.
+    rationale: >
+      User explicitly required PostHog data to look at all events, not just
+      the web-analytics summary.
+
+  - id: references_per_issue
+    type: reference
+    statement: >
+      Every issue listed in the "Top issues" section includes at least ONE
+      specific source-system reference. A valid reference is any single one
+      of: an Intercom conversation ID (numeric string), a PostHog insight
+      ID/short_id, a PostHog error-tracking issue ID, or a specific PostHog
+      event name. Only one reference per issue is required.
+    rationale: >
+      User must be able to click through to validate every issue. Drafts
+      without references were rejected.
+
+  - id: verbatim_quote_per_issue
+    type: structural
+    statement: >
+      Every issue listed in the "Top issues" section includes at least one
+      verbatim customer quote enclosed in double-quotation marks (straight or
+      curly). If an issue is sourced from PostHog only with no associated
+      Intercom tickets, the entry must explicitly state "no customer quote —
+      PostHog-only signal".
+    rationale: >
+      User flagged drafts without direct customer language as too abstract to
+      validate quickly.
+
+  - id: numeric_count_per_issue
+    type: structural
+    statement: >
+      Every issue listed in the "Top issues" section states a specific
+      integer count of supporting evidence (e.g., "28 of 203 tickets",
+      "142 events"). The entry uses NO vague quantifiers like "roughly",
+      "a handful", "multiple", "several", "a few", "many", "a third of", or
+      similar approximations to describe issue volume.
+    rationale: >
+      Approximations make week-over-week drift unverifiable.
+
+  - id: severity_tag_fixed_set
+    type: structural
+    statement: >
+      Every issue listed in the "Top issues" section is tagged with a severity
+      drawn from the fixed set {HIGH, MEDIUM, LOW}. No other severity labels
+      (e.g. "critical", "minor", "p1") are used. The tag must appear on the
+      issue's heading line.
+    rationale: >
+      Stable vocabulary is required for severity-drift comparisons across
+      weeks.
+
+  - id: in_flight_work_per_issue
+    type: binary_llm
+    statement: >
+      For each issue in the "Top issues" section, the entry contains an
+      "in-flight work" statement that does ONE of: (a) cites a Linear/issue-
+      tracker ID with a one-line description, (b) quotes a specific Intercom
+      admin reply that confirms work is underway (in quotation marks, with
+      conversation ID), or (c) explicitly states "no in-flight work found".
+      Entries with no in-flight-work statement at all fail.
+    rationale: >
+      User explicitly required cross-referencing whether the team is already
+      working on each issue, so prioritization isn't duplicated.
+
+  - id: severity_drift_section
+    type: binary_llm
+    statement: >
+      The md file contains a "Severity drift" (or equivalently named) section
+      that does ONE of: (a) lists each issue from the most recent prior md
+      file in the same folder and labels each with one of {UP, DOWN,
+      UNCHANGED, RESOLVED, NEW}, OR (b) explicitly states "N/A — first run,
+      no prior file in folder" if no prior file exists.
+    rationale: >
+      User explicitly required prior-week comparison to detect regressions
+      and persistent issues.
+
+  - id: file_naming_and_location
+    type: structural
+    statement: >
+      The md file is saved with filename matching the pattern
+      `YYYY-MM-DD-critical-issues.md` (where YYYY-MM-DD is the end-date of
+      the reporting window) inside a folder dedicated to these digests. The
+      summary message presented to the user includes the relative path to
+      this saved file so the user can open it.
+    rationale: >
+      Consistent naming is what enables prior-file lookup for severity drift,
+      and the user must be able to open the artifact from the summary.
