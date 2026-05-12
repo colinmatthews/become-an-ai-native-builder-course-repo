@@ -13,6 +13,9 @@ If not, install for your platform. The easiest way to to ask Claude Code desktop
 
 If you want to install manully, full instructions are here: https://code.claude.com/docs/en/overview#native-install-recommended
 
+All tokens needed can be copied from this link: https://send.bitwarden.com/#j7D_EZHmeUWtyrRIAQUnIA/lx6G4kXSOAzKF-IYFTyhAw
+You can ask Claude to help you set up these MCP servers by copying the tokens and instructions below.
+
 
 ## Step 1. Connect Intercom
 
@@ -21,7 +24,7 @@ The Intercom MCP server lets Claude read your support conversations, tickets, an
 Copy and paste the command below to connect to our Intercom:
 ```bash
 claude mcp add -s user --transport http intercom https://mcp.intercom.com/mcp \
---header "Authorization: Bearer dG9rOmFjYTE3MDQwXzY2YTJfNGQ5Y19hMjljX2QyNThmNTA1YTY0NToxOjA="
+--header "Authorization: Bearer TOKEN"
 ```
 
 Then try this command to list your MCP servers:
@@ -47,7 +50,7 @@ You should see a response similar to this:
   
 ```bash
 claude mcp add -s user --transport http posthog https://mcp.posthog.com/mcp \
---header "Authorization: Bearer  phx_Nm6Ke2MPD2KioQoWUm8hneZZNjnGLVsV2LhtbaaPPsCURGF8"
+--header "Authorization: Bearer TOKEN"
 ```
 
 Then try this command to list your MCP servers:
@@ -72,7 +75,7 @@ The Linear MCP server lets Claude read issues, projects, cycles, and labels.
 
 ```bash
 claude mcp add -s user --transport http linear https://mcp.linear.app/mcp \
-  --header "Authorization: Bearer lin_api_UBFWr8MEbfs4ftuENQxmI5Ka0tmb76Sj5QjYeOkG"
+  --header "Authorization: Bearer TOKEN"
 ```
 
 Then try this command to list your MCP servers:
