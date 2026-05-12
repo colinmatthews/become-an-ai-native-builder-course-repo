@@ -47,7 +47,7 @@ You should see a response similar to this:
   
 ```bash
 claude mcp add -s user --transport http posthog https://mcp.posthog.com/mcp \
---header "Authorization: Bearer phx_yA2aBrTyeT6hZujh7prUqHypg8E36XH2qtGwRVQAosWDwTdL"
+--header "Authorization: Bearer  phx_Nm6Ke2MPD2KioQoWUm8hneZZNjnGLVsV2LhtbaaPPsCURGF8"
 ```
 
 Then try this command to list your MCP servers:
@@ -72,7 +72,7 @@ The Linear MCP server lets Claude read issues, projects, cycles, and labels.
 
 ```bash
 claude mcp add -s user --transport http linear https://mcp.linear.app/mcp \
-  --header "Authorization: Bearer lin_api_fg9wRkcAXQwM60NRP5O3oYrsOAb1MuV53jVtItQx"
+  --header "Authorization: Bearer lin_api_UBFWr8MEbfs4ftuENQxmI5Ka0tmb76Sj5QjYeOkG"
 ```
 
 Then try this command to list your MCP servers:
